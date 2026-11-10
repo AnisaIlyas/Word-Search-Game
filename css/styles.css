@@ -1,0 +1,553 @@
+/*heading design*/
+#main-heading{
+    text-align: center;
+    color:rgb(156, 235, 78);
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.7px currentColor;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;;
+}
+/*Intro line design*/
+#main-para{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.colorblend{
+    background-color: rgb(10, 10, 67);
+}
+#navigation{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border: 1px solid rgb(156, 235, 78);
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+
+}
+#navigation a{
+    text-decoration: none;
+    color: white;
+}
+.brand{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding: 5px;
+}
+/*PLAY NOW button designing*/
+.container{
+    position: relative;
+}
+.play-button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+
+    /*position in center*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    /*using clamp to keep the button's width, padding, and font size responsive across different screen sizes*/ 
+    padding: clamp(12px, 2vw, 20px);
+    width: clamp(160px, 25vw, 280px);
+    font-size: clamp(14px, 2vw, 22px);
+    white-space: nowrap;  /*it prevents text to wrap into new line*/
+    
+    /*appearance*/
+    border-radius: 50px;
+    background-color: rgb(150, 206, 9);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    border: 2px solid rgb(150, 206, 9);
+    color: rgb(10, 10, 137);
+    font-weight: bold;
+    text-decoration: none;
+}
+/*postioning the button, giving it a shadow and making the pressed effect smooth*/
+.play-button{
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(245, 245, 245, 0.974),
+                0 0 25px rgba(4, 46, 109, 0.35),
+                0 0 45px rgba(2, 27, 82, 0.9);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+/*adding visual effect to the button when user clicks it*/
+.play-button:active{ 
+    transform: translate(-50%, calc(-50% + 4px)); 
+    box-shadow: 0 1px 0 #208108;
+}
+
+/*game page designing*/
+#game-page{
+    background-color:rgb(18, 18, 113);
+}
+/*game page heading designing, adjusting font size and family and aligning the text in center*/
+.game-page-heading{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0 0 5px rgb(4, 37, 93);
+    margin-bottom: 3px;
+}
+
+/*2nd heading of game page */
+.game-page-heading-2{
+    text-align: center;
+    color:rgb(156, 235, 78);
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-text-stroke: 0.7px currentColor;
+    margin-top: 0%;
+    margin-bottom: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.game-para{
+    text-align: center;
+    margin-top: 0%;
+    color: white;
+    font-size: 20px;
+}
+/*adding the background image and setting word grid container on it*/
+.page-designing{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image:url(../images/simple-wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*setting the grid, its words, adding styles and color on words*/
+.grid-position{
+    width: max-content;
+    padding: 50px;
+    height: max-content;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    /*keeping all the grid words in center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(18, 227, 234);
+    border-radius: 20px;
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+
+    
+}
+/*setting the words in the form of grid*/
+.word-grid{
+    display: grid;
+    gap: 15px;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    user-select: none;
+    touch-action: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+
+}
+.word-grid div{ 
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+
+}
+.word-grid div.selected{
+    background-color: #0a2a61;
+    color: rgb(18, 227, 234);
+}
+#word-list li.found{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+#game-message{
+    color: rgb(18, 227, 234);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#game-message.success-message{
+    color: rgb(18, 227, 234);
+}
+#game-message.warning-message{
+    color: rgb(0, 255, 8);
+}
+#game-message.error-message{
+    color: red;
+}
+#score{
+    color: rgb(18, 227, 234);
+    text-align: center;
+    font-weight: bold;
+}
+#next-level-button{
+    /*next-level-button appearance, position, fonts and margins*/
+    display: block;
+    margin: 20px auto 30px;
+    padding: 15px 30px;
+    background-color: rgb(18, 227, 234);
+    border: 2px solid rgb(18, 18, 113);
+    border-radius: 20px;
+    color: rgb(18, 18, 113);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(18, 227, 234);
+    animation: dropDown 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+#next-level-button{
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgb(18, 227, 234);
+}
+#next-level-button[hidden]{
+    display: none;
+}
+@keyframes dropDown{
+    0%{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    55%{
+        transform: translateY(-80px);
+    }
+    70%{
+        transform: translateY(0);
+
+    }
+    82%{
+        transform: translateY(-35px);
+    }
+    92%{
+        transform: translateY(0);
+    }
+    97%{
+        transform: translateY(-12px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.tutorial-highlight{
+    background-color: #12e3ea;
+    color: rgb(18, 18, 113);
+    border: 2px solid white;
+    box-shadow: 0 0 15px #12e3ea;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+/*positioning the word-list*/
+.word-list{
+    width: max-content;
+    height: max-content;
+    box-sizing: border-box;
+    padding: 6px;
+    color: white;
+    border: 2px solid rgb(18, 227, 234);
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+.word-list li{
+    margin: 35px;
+    list-style: none;
+}
+
+.word-list ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+/*Registration page*/
+#registration-page{
+   background-image:url(../images/simple-wallpaper.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   align-items: center;
+
+   min-height: 100vh;
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.registration-page-heading{
+    color:rgb(156, 235, 78);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    background-color:rgb(10, 10, 137);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(18, 227, 234);
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+
+    border-radius: 12px;
+}
+.required-userdata-container{
+    /*appearance of container and its items */
+    /*background-color: rgb(10, 10, 137);*/
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    border: 2px solid rgb(18, 227, 234);
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+
+
+    /*size and adjustment of container*/
+    width: 400px;
+    max-width: 90%;
+    min-height: 400px;
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.required-userdata-container input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 5px;
+}
+.submit{
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 5px;
+    margin-top: 10%;
+    color: black;
+
+}
+#hidden-login-button{
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 5px;
+    margin-top: 10%;
+    color: black;
+}
+/*Login page designing*/
+#login-page{
+    background-image: url(../images/simple-wallpaper.png);
+    background-size: cover;
+   background-repeat: no-repeat;
+   align-items: center;
+
+   min-height: 100vh;
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.login-data-container{
+    /*appearance of container and its items */
+    /*background-color: rgb(10, 10, 137);*/
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    border: 2px solid rgb(18, 227, 234);
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+
+
+    /*size and adjustment of container*/
+    width: 400px;
+    max-width: 90%;
+    min-height: 400px;
+    padding: 35px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.login-data-container input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 5px;
+}
+.login-heading{
+    color:rgb(156, 235, 78);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    background-color:rgb(10, 10, 137);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid rgb(18, 227, 234);
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+
+    border-radius: 12px;
+}
+.login-submit{
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 5px;
+    margin-top: 10%;
+    color: black;
+
+}
+#not-account{
+    color: white;
+    text-align: center;
+}
+#not-account{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#not-account a{
+    color: white;
+    text-decoration: none;
+}
+#not-account a:hover{
+    color: white;
+    text-decoration: underline;
+}
+#register-button{
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(18, 227, 234);
+    border-radius: 5px;
+    margin-top: 10%;
+    color: black;
+
+}
+/*LeaderBoard page*/
+#leaderboard-page{
+     background-image: url(../images/simple-wallpaper.png);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     min-height: 100vh;
+}
+#leaderboard-heading{
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    margin: 30px 0;
+
+}
+.leaderboard-container{
+    margin-top: 40px auto 0;
+    width: max-content;
+    height: max-content;
+    border: 2px solid rgb(18, 227, 234);
+    box-shadow: 
+    0 0 15px rgb(2, 45, 110),
+    0 0 35px rgb(4, 36, 126),
+    0 0 60px rgb(5, 62, 123);
+    max-width: 100%;
+    min-height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    position: relative;
+    margin: 40px auto !important;
+
+}
+#leaderboard-table{
+    color: white;
+    gap: 200px;
+    white-space: nowrap;
+}
+    
+table{
+    border-spacing: 150px 12px ;
+    width: 100%;
+}
+#leaderboard-table td{
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(247, 247, 255);
+}

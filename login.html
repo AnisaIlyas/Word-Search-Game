@@ -1,0 +1,34 @@
+<!--designing the basic structure of page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css"> <!--connecting css with html for designing-->
+    <script src="./javas/login.js" defer></script> <!--connecting javascript with html-->
+</head>
+<body id="login-page">
+    <form id="login-user">
+        <h1 class="login-heading">User Login</h1>
+
+        <div class="login-data-container">
+        <label for="email">Email</label>
+        <input type="email" id="login-email" placeholder="Email">
+
+        <label for="password">Password</label>
+        <input type="password"
+         id="login-password" 
+         placeholder="password">
+
+        <button type="submit" class="login-submit">Login</button>
+        <p id="not-account">Don't have an account?
+             <a href="registration.html">Register Here</a> <!--navigation to registration page-->
+            </p>
+        <p id="login-msg"></p>
+        <button id="register-button" type="button" hidden>Register Here</button>
+        </div>
+    </form>
+    
+</body>
+</html>

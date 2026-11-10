@@ -1,0 +1,48 @@
+<!--designing the basic structure of page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word search</title>
+    <link class="gamepage" rel="stylesheet" href="css/styles.css"> <!--connecting css with html for designing-->
+    <script src="javas/game.js" defer></script> <!--connecting javascript with html-->
+    <audio id="background-music" src="./sounds/music.mp3" loop></audio>
+</head>
+<body id="game-page">
+    <h2 class="game-page-heading">HUNT DOWN THE
+    </h2>
+    <h1 class="game-page-heading-2">HIDDEN WORDS! 🔎</h1>
+    <p class="game-para">Find all the hidden words in the grid</p>
+    <!--providing navigation here-->
+    <nav id="navigation"> 
+        <a href="index.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="registration.html">Registration</a>
+        <a href="login.html">User Login</a>
+        <a href="leaderboard.html">leaderboard</a>
+    </nav>
+<div class="page-designing">
+    <div class="word-list">
+        <ul id="word-list">
+            <li>BIRDS</li>
+            <li>GRASS</li>
+            <li>KIDS</li>
+            <li>PICNIC</li>
+            <li>PLAY</li>
+            <li>SWING</li>
+            <li>TREES</li>
+        </ul>
+    </div>
+<div class="grid-position">
+    <div class="word-grid" id="word-grid">
+        
+    </div>
+</div>
+</div>
+<p id="score">Score : 0</p>
+<p id="game-message" aria-live="polite"></p> <!--now javascript will update this attribute and display it on screen-->
+<button id="next-level-button" type="button" hidden>NEXT LEVEL ➜</button>
+    
+</body>
+</html>
