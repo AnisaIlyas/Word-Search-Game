@@ -1,5 +1,6 @@
 # WordSearch Game
 1. Project Overview
+
 Word Search game is an interactive browser-based game developed as a part of CST2120 Web Application and Databases coursework. 
 The game allows user to register, login and play multiple levels of word search puzzle. players earn points by finding the words hidden in letter grid. players can also have access to leaderboard where they can see their ranking as comparison with other players. The project was developed using:
 - HTML
