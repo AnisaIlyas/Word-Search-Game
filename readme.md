@@ -18,13 +18,13 @@ Stores registered user information and game scores in JSON format.
 Provides sounds effects during gameplay.
 
 3. Main Features
-User Accounts
+### User Accounts
 - User registration
 - User login
 - Form validation
 - Duplicate email and username checking
 - User information stored in local storage
-Word Search Game
+### Word Search Game
 - Interactive letter grid
 - Multiple game levels
 - Hidden words to discover 
@@ -32,12 +32,12 @@ Word Search Game
 - visual feedback for correct or incorrect selections
 - Sounds effects
 - Level progression
-Leaderboard 
+### Leaderboard 
 - saves players score
 - Displays player usernames and scores.
 - Allows players to compare their results.
 
-Website Navigation
+### Website Navigation
 - Homepage.
 - Registration page.
 - Login page.
