@@ -1,5 +1,5 @@
 # WordSearch Game
-1. Project Overview
+## Project Overview
 
 Word Search game is an interactive browser-based game developed as a part of CST2120 Web Application and Databases coursework. 
 The game allows user to register, login and play multiple levels of word search puzzle. players earn points by finding the words hidden in letter grid. players can also have access to leaderboard where they can see their ranking as comparison with other players. The project was developed using:
@@ -7,7 +7,7 @@ The game allows user to register, login and play multiple levels of word search 
 - CSS
 - JavaScript (ES2020+)
 
-2. Technologies Used
+## Technologies Used
 - HTML:
 Structure the website and game pages
 - CSS:
@@ -17,7 +17,7 @@ Stores registered user information and game scores in JSON format.
 - HTML Audio:
 Provides sounds effects during gameplay.
 
-3. Main Features
+## Main Features
 ### User Accounts
 - User registration
 - User login
@@ -44,7 +44,7 @@ Provides sounds effects during gameplay.
 - Game page.
 - Leaderboard page.
 
-4. How to run project?
+## How to run project?
 - Download or extract the project folder
 - open project in VS code
 - Open index.html using modern we browser, or use live extension of VS code
@@ -54,9 +54,9 @@ Provides sounds effects during gameplay.
 - start playing the game
 - compete in levels and see your scores in leaderboard
 
-5. Browser Compatibility
+## Browser Compatibility
 The project is designed to run in modern web browsers that support HTML5, CSS3, JavaScript ES2020+ and LocalStorage.
-6. References and Credits
+## References and Credits
 
 ### Sound Effects
 - Mixkit – Free Sound Effects Library. Used for gameplay sound effects, including correct and incorrect word selections and level completion.
@@ -67,5 +67,5 @@ The project is designed to run in modern web browsers that support HTML5, CSS3, 
 
 ### Background Audio
 - Source: To be confirmed.
-7. Author
+## Author
 Developed as part of CST2120- Web Applications and databases coursework. 
